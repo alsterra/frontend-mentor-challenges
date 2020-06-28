@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+
+}
+
+main {
+    max-width: 600px;
+    margin: 60px auto 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    font-size: 40px;
+}
+
+h1 span {
+    color: hsl(209, 33%, 12%);
+    font-weight: 700;
+}
+
+h2 {
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+form {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+    text-align: left;
+}
+
+input {
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+    width: 100%;
+}
+
+form div.input {
+    flex: 0.7;
+}
+
+form small {
+    color: hsl(354, 100%, 66%);
+    display: none;
+    font-style: italic;
+    margin: 0 10px 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    opacity: 0.6;
+}
+
+input.error {
+    border-color: hsl(354, 100%, 66%);
+}
+
+button {
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 5px hsl(223, 100%, 88%);
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    padding: 15px 40px;
+    flex: 0.3;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.illustration {
+    max-width: 100%;
+    margin: 60px 0;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-media li {
+    margin: 10px;
+}
+
+.social-media li a {
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 50%;
+    color: hsl(223, 87%, 63%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+}
+
+.social-media li a:hover {
+    background-color: hsl(223, 87%, 63%);
+    border-color: hsl(223, 87%, 63%);
+    color: #fff;
+}
+
+footer p {
+    color: hsl(0, 0%, 59%);
+}
+
+@media screen and (max-width: 760px) {
+
+    form {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form div.input {
+        width: 100%;
+    }
+
+    form small {
+        margin-bottom: 20px;
+    }
+
+    button {
+        margin-left: 0;
+        width: 100%;
+    }
+}
